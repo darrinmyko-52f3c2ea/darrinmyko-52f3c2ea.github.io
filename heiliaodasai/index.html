@@ -1,0 +1,1221 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>黑料大赛吃瓜网-吃瓜爆料合集_黑料大赛热门瓜_吃瓜网最新入口</title>
+  <meta name="description" content="黑料大赛吃瓜网聚合全网热门吃瓜爆料与黑料大赛动态，提供最新瓜田资讯、热门爆料合集、深度解析与用户讨论，适合爱吃瓜的网友收藏浏览。">
+  <meta name="keywords" content="黑料大赛吃瓜网,吃瓜爆料,黑料大赛,热门瓜,吃瓜合集">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --accent: #f97316;
+      --accent-soft: #fff7ed;
+      --border: #e2e8f0;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.03);
+      --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    }
+
+    body {
+      font-family: var(--font-system);
+      background-color: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* 顶部导航 */
+    .navbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.88);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .logo-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(145deg, #f97316, #ea580c);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+      font-weight: 800;
+      -webkit-text-fill-color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 8px;
+      font-size: 0.92rem;
+    }
+
+    .nav-links a {
+      padding: 8px 12px;
+      border-radius: 10px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .nav-links a:hover {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    /* 首屏 Banner */
+    .hero {
+      background: linear-gradient(145deg, #fffbf5 0%, #ffffff 70%);
+      padding: 48px 0 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      color: #0b1120;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(145deg, #f97316, #dc2626);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-desc {
+      max-width: 700px;
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 560px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 60px;
+      padding: 6px 6px 6px 22px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 32px;
+    }
+
+    .search-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      padding: 12px 0;
+      background: transparent;
+      color: var(--text-primary);
+    }
+
+    .search-box input::placeholder {
+      color: #94a3b8;
+    }
+
+    .search-box button {
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .search-box button:hover {
+      background: #ea580c;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .hero-tags a {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.2s;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-tags a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+      transform: translateY(-1px);
+    }
+
+    /* 通用 section */
+    .section {
+      padding: 48px 0;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+
+    .section-header h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .section-header .more-link {
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    /* 内容简介 */
+    .intro-card {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      line-height: 1.8;
+      color: var(--text-secondary);
+    }
+
+    .intro-card p {
+      margin-bottom: 16px;
+    }
+
+    .intro-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 热门推荐卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .content-card {
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .content-card h3 {
+      font-size: 1.18rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      margin-top: 4px;
+    }
+
+    /* 最新更新列表 */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .update-item {
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      padding: 18px 22px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.2s;
+    }
+
+    .update-item:hover {
+      background: #fefcf9;
+    }
+
+    .update-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .update-title {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .update-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+
+    .update-time {
+      font-size: 0.78rem;
+      color: #94a3b8;
+      white-space: nowrap;
+      margin-left: 16px;
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 12px;
+    }
+
+    .category-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 18px 12px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      transition: all 0.2s;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .category-item:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    /* 深度解析 */
+    .deep-analysis {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 42px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      line-height: 1.85;
+      color: var(--text-secondary);
+    }
+
+    .deep-analysis h2 {
+      font-size: 1.9rem;
+      color: var(--text-primary);
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+
+    .deep-analysis p {
+      margin-bottom: 18px;
+    }
+
+    .deep-analysis p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 体验指南 */
+    .guide-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .guide-item {
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      padding: 24px 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .guide-item h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+
+    .guide-item p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* FAQ 知识库式 */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .faq-card {
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-card h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+      display: flex;
+      gap: 8px;
+    }
+
+    .faq-card h4 span {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .faq-card p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* 用户评论 */
+    .comment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .comment-item {
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      border: 1px solid var(--border);
+      display: flex;
+      gap: 14px;
+    }
+
+    .comment-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #fed7aa, #fdba74);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #9a3412;
+    }
+
+    .comment-body {
+      flex: 1;
+    }
+
+    .comment-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+
+    .comment-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .comment-date {
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+
+    .comment-text {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* 资讯卡片 */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .news-card {
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s;
+    }
+
+    .news-card:hover {
+      box-shadow: var(--shadow-hover);
+    }
+
+    .news-date {
+      font-size: 0.78rem;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+
+    .news-card h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .news-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* 页脚 */
+    .footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      padding: 48px 0 32px;
+      margin-top: 20px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      max-width: 340px;
+      line-height: 1.7;
+      color: #94a3b8;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .footer-col h4 {
+      color: white;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-bottom: 8px;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #1e293b;
+      margin-top: 36px;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 0.78rem;
+      color: #64748b;
+    }
+
+    /* 响应式 */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.9rem;
+      }
+
+      .hero-desc {
+        font-size: 0.98rem;
+      }
+
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .deep-analysis {
+        padding: 24px;
+      }
+
+      .intro-card {
+        padding: 24px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .section-header h2 {
+        font-size: 1.4rem;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23f97316'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial'%3E黑%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="navbar">
+    <div class="wrapper nav-inner">
+      <a href="/" class="logo-badge">
+        <span class="logo-icon">黑</span>
+        黑料大赛吃瓜网
+      </a>
+      <nav class="nav-links">
+        <a href="/#热门推荐">热门推荐</a>
+        <a href="/#最新更新">最新更新</a>
+        <a href="/#深度解析">深度解析</a>
+        <a href="/#分类入口">分类入口</a>
+        <a href="/#FAQ">常见问题</a>
+        <a href="/#用户评论">用户评论</a>
+        <a href="/#相关资讯">相关资讯</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 首屏 Banner -->
+    <section class="hero" id="首屏">
+      <div class="wrapper hero-content">
+        <h1>黑料大赛吃瓜网 · 全网热门<span>吃瓜爆料</span>聚合地</h1>
+        <p class="hero-desc">
+          每天更新黑料大赛最新动态、圈内热门爆料与吃瓜合集，<br>
+          从事件梳理到网友讨论，一站式围观全网热点。
+        </p>
+        <div class="search-box">
+          <input type="text" placeholder="搜索瓜名、事件、关键词...">
+          <button>吃瓜</button>
+        </div>
+        <div class="hero-tags">
+          <a href="/#热门推荐">热门爆料</a>
+          <a href="/#最新更新">今日新瓜</a>
+          <a href="/#分类入口">事件合集</a>
+          <a href="/#深度解析">深度吃瓜</a>
+          <a href="/#用户评论">瓜友讨论</a>
+          <a href="/#相关资讯">圈内动态</a>
+          <a href="/#FAQ">吃瓜指南</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 内容简介 -->
+    <section class="section" id="内容简介">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>关于黑料大赛吃瓜网</h2>
+        </div>
+        <div class="intro-card">
+          <p>“黑料大赛吃瓜网”是面向吃瓜爱好者的内容聚合专题，专注于整理全网热门的黑料大赛相关爆料、事件脉络与网友讨论。无论你是刚刚听说某个瓜，还是想系统性地回顾近期热点，这里都能提供相对完整的参考信息。</p>
+          <p>本页面围绕黑料大赛这一核心话题，覆盖热门事件推荐、最新动态追踪、深度解析、常见问题与用户评论等多个维度。内容以编辑整理和网友讨论为主，旨在帮助读者快速了解事件背景、传播节点以及不同视角的看法。</p>
+          <p>适合哪些人浏览？如果你喜欢关注网络热门话题、乐于围观各种爆料与反转、或者想了解吃瓜群众都在讨论什么，那么收藏这个页面会很有帮助。页面结构清晰，分类明确，移动端阅读体验友好，适合日常刷一刷、追一追。</p>
+          <p>为什么值得收藏？黑料大赛类话题更新快、信息散，这里做了相对系统的归集。你可以通过热门推荐快速锁定当前最受关注的事件，也可以通过分类入口按类型浏览，还能在评论区看到不同网友的真实反应，体验比较接近真实内容社区。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 热门推荐 -->
+    <section class="section" id="热门推荐">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>热门推荐 · 大家都在吃这些瓜</h2>
+          <a href="/#最新更新" class="more-link">查看更多 →</a>
+        </div>
+        <div class="card-grid">
+          <article class="content-card">
+            <div class="card-tags">
+              <span class="tag">黑料大赛</span>
+              <span class="tag">热门</span>
+              <span class="tag">反转</span>
+            </div>
+            <h3>黑料大赛首轮爆料合集</h3>
+            <p class="card-desc">首轮参赛选手背景被网友扒出，多条线索指向同一圈层，评论区已经吵翻天，真相扑朔迷离。</p>
+            <div class="card-meta">
+              <span>🔥 热度 98.2万</span>
+              <span>更新于 11-06</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <div class="card-tags">
+              <span class="tag">吃瓜爆料</span>
+              <span class="tag">独家</span>
+              <span class="tag">争议</span>
+            </div>
+            <h3>某选手聊天记录流出</h3>
+            <p class="card-desc">长达数十页的聊天截图在多个群聊流传，涉及多位圈内人士，目前当事人尚未正面回应。</p>
+            <div class="card-meta">
+              <span>🔥 热度 87.6万</span>
+              <span>更新于 11-06</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <div class="card-tags">
+              <span class="tag">黑料大赛</span>
+              <span class="tag">深扒</span>
+              <span class="tag">人物</span>
+            </div>
+            <h3>评委阵容背景深扒</h3>
+            <p class="card-desc">本届黑料大赛评委团被指与多位参赛者存在千丝万缕的联系，网友整理出关系图谱，引发公平性质疑。</p>
+            <div class="card-meta">
+              <span>🔥 热度 76.4万</span>
+              <span>更新于 11-05</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <div class="card-tags">
+              <span class="tag">吃瓜</span>
+              <span class="tag">视频</span>
+              <span class="tag">现场</span>
+            </div>
+            <h3>现场视频流出引发热议</h3>
+            <p class="card-desc">一段疑似比赛后台的短视频在社交平台疯传，画面内容与官方说法存在出入，网友要求给出解释。</p>
+            <div class="card-meta">
+              <span>🔥 热度 69.1万</span>
+              <span>更新于 11-05</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <div class="card-tags">
+              <span class="tag">黑料大赛</span>
+              <span class="tag">票选</span>
+              <span class="tag">争议</span>
+            </div>
+            <h3>投票环节疑似刷票</h3>
+            <p class="card-desc">有网友发现某选手票数在短时间内异常飙升，截图对比显示数据曲线存在明显问题，官方暂未回应。</p>
+            <div class="card-meta">
+              <span>🔥 热度 62.8万</span>
+              <span>更新于 11-04</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <div class="card-tags">
+              <span class="tag">吃瓜爆料</span>
+              <span class="tag">后续</span>
+              <span class="tag">回应</span>
+            </div>
+            <h3>当事人小号发文回应</h3>
+            <p class="card-desc">被点名的选手通过疑似小号发布长文，否认部分指控并暗示有幕后推手，评论区两极分化严重。</p>
+            <div class="card-meta">
+              <span>🔥 热度 58.3万</span>
+              <span>更新于 11-04</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <div class="card-tags">
+              <span class="tag">黑料大赛</span>
+              <span class="tag">合集</span>
+              <span class="tag">整理</span>
+            </div>
+            <h3>黑料大赛时间线全整理</h3>
+            <p class="card-desc">从官宣到初赛再到争议爆发，编辑按时间顺序梳理关键节点，适合新来的瓜友快速补课。</p>
+            <div class="card-meta">
+              <span>🔥 热度 54.7万</span>
+              <span>更新于 11-03</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <div class="card-tags">
+              <span class="tag">吃瓜</span>
+              <span class="tag">投票</span>
+              <span class="tag">互动</span>
+            </div>
+            <h3>网友最想看到的后续发展</h3>
+            <p class="card-desc">超过三万名网友参与投票，其中“希望官方公开完整评审记录”选项以压倒性优势位居第一。</p>
+            <div class="card-meta">
+              <span>🔥 热度 49.5万</span>
+              <span>更新于 11-03</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 最新更新 -->
+    <section class="section" id="最新更新">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>最新更新 · 实时追踪</h2>
+        </div>
+        <div class="update-list">
+          <div class="update-item">
+            <div class="update-info">
+              <span class="update-title">黑料大赛第二轮爆料放出</span>
+              <span class="update-desc">新的聊天记录截图被公开，涉及两位此前未露面的圈内人士。</span>
+            </div>
+            <span class="update-time">11-07 14:20</span>
+          </div>
+          <div class="update-item">
+            <div class="update-info">
+              <span class="update-title">官方发布简短声明</span>
+              <span class="update-desc">主办方称已关注到网络讨论，将在一周内公布调查进展。</span>
+            </div>
+            <span class="update-time">11-07 11:05</span>
+          </div>
+          <div class="update-item">
+            <div class="update-info">
+              <span class="update-title">涉事选手社交账号清空动态</span>
+              <span class="update-desc">此前发布的多条内容被删除，仅保留一条置顶动态。</span>
+            </div>
+            <span class="update-time">11-07 09:30</span>
+          </div>
+          <div class="update-item">
+            <div class="update-info">
+              <span class="update-title">知名博主发布事件梳理视频</span>
+              <span class="update-desc">时长约二十分钟的视频梳理了事件脉络，播放量迅速突破百万。</span>
+            </div>
+            <span class="update-time">11-06 22:15</span>
+          </div>
+          <div class="update-item">
+            <div class="update-info">
+              <span class="update-title">更多往届参赛者被提及</span>
+              <span class="update-desc">网友翻出往届比赛片段，对比之下质疑比赛流程存在相似问题。</span>
+            </div>
+            <span class="update-time">11-06 19:40</span>
+          </div>
+          <div class="update-item">
+            <div class="update-info">
+              <span class="update-title">相关话题登上热搜榜单</span>
+              <span class="update-desc">黑料大赛相关词条在多个平台热搜榜上占据靠前位置。</span>
+            </div>
+            <span class="update-time">11-06 16:20</span>
+          </div>
+          <div class="update-item">
+            <div class="update-info">
+              <span class="update-title">某品牌方删除合作海报</span>
+              <span class="update-desc">有网友发现某品牌官方账号删除了与参赛选手相关的宣传内容。</span>
+            </div>
+            <span class="update-time">11-06 13:10</span>
+          </div>
+          <div class="update-item">
+            <div class="update-info">
+              <span class="update-title">吃瓜网专题页访问量创新高</span>
+              <span class="update-desc">本站黑料大赛相关内容单日浏览较前日增长超过百分之一百五十。</span>
+            </div>
+            <span class="update-time">11-05 21:05</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 分类入口 -->
+    <section class="section" id="分类入口">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>分类入口 · 按兴趣找瓜</h2>
+        </div>
+        <div class="category-grid">
+          <a href="/#热门推荐" class="category-item">热门爆料</a>
+          <a href="/#最新更新" class="category-item">今日新瓜</a>
+          <a href="/#深度解析" class="category-item">事件梳理</a>
+          <a href="/#用户评论" class="category-item">网友讨论</a>
+          <a href="/#相关资讯" class="category-item">圈内动态</a>
+          <a href="/#热门推荐" class="category-item">人物深扒</a>
+          <a href="/#最新更新" class="category-item">反转后续</a>
+          <a href="/#FAQ" class="category-item">吃瓜指南</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 深度解析 -->
+    <section class="section" id="深度解析">
+      <div class="wrapper">
+        <div class="deep-analysis">
+          <h2>深度解析：黑料大赛为何引发持续关注？</h2>
+          <p>黑料大赛作为一个网络话题，其吸引力并不在于比赛本身，而在于它提供了一个持续输出“瓜”的叙事场域。从赛制设置到选手背景，从评委关系到投票数据，几乎每一个环节都能成为网友讨论的素材。这种高密度的信息输出，恰好满足了吃瓜群众对新鲜内容的消费需求。</p>
+          <p>从内容类型来看，黑料大赛相关讨论大致可以分为几个层次。第一层是事件爆料，包括聊天记录、后台视频、票数异常等具体线索，这类内容传播速度快、讨论热度高。第二层是人物背景，网友热衷于挖掘参赛者与评委之间的关联，试图拼凑出一张完整的关系网。第三层是观点碰撞，不同立场的网友围绕同一事件给出截然不同的解读，评论区往往比正文更精彩。</p>
+          <p>对于吃瓜网的用户来说，最有价值的部分往往是“梳理”而不是“站队”。信息碎片化是这类话题的典型特征，单个截图或短视频很难说明全貌。因此，按时间线整理关键节点、标注信息来源、区分事实与推测，是提升阅读体验的关键。本页面在热门推荐和最新更新模块中尽量保留了事件的时间顺序，方便读者自行判断。</p>
+          <p>另一个值得注意的现象是，黑料大赛的讨论热度与官方回应的节奏密切相关。当官方保持沉默时，网友的猜测会迅速填补信息真空，各种“疑似”“据传”的内容大量涌现；而当官方发布声明后，讨论焦点又会转向声明的措辞和细节。这种动态变化使得相关内容需要持续更新，也对页面的信息组织能力提出了更高要求。</p>
+          <p>适合哪些人关注？如果你喜欢围观网络热点、对爆料类内容有天然的好奇心、或者想了解吃瓜社区的讨论方式，这个专题会比较对胃口。当然，吃瓜也需要保持理性，对未经证实的信息保持审慎态度，这也是本页面在整理内容时始终坚持的原则。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 体验指南 -->
+    <section class="section" id="体验指南">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>体验指南 · 如何高效吃瓜</h2>
+        </div>
+        <div class="guide-list">
+          <div class="guide-item">
+            <h4>📌 按时间线补课</h4>
+            <p>先看最新更新模块了解当前进展，再回到热门推荐补事件背景，效率最高。</p>
+          </div>
+          <div class="guide-item">
+            <h4>🔍 善用分类筛选</h4>
+            <p>分类入口按内容类型划分，想深扒人物还是看反转后续，点对应入口即可。</p>
+          </div>
+          <div class="guide-item">
+            <h4>💬 评论区有惊喜</h4>
+            <p>用户评论经常补充正文没提到的细节，不同立场的声音也值得参考。</p>
+          </div>
+          <div class="guide-item">
+            <h4>📱 移动端友好</h4>
+            <p>页面针对手机阅读做了适配，通勤路上刷一刷也很方便。</p>
+          </div>
+          <div class="guide-item">
+            <h4>⭐ 收藏防走丢</h4>
+            <p>事件更新频繁，收藏本页可以随时回来查看最新进展。</p>
+          </div>
+          <div class="guide-item">
+            <h4>🧠 保持理性吃瓜</h4>
+            <p>对未经证实的内容保持审慎，不传谣不信谣，吃瓜体验更健康。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="FAQ">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>常见问题 · 吃瓜前先看这里</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-card">
+            <h4><span>Q1</span> 黑料大赛吃瓜网主要提供什么内容？</h4>
+            <p>本页面聚合黑料大赛相关的热门爆料、事件梳理、网友讨论和后续动态。你可以把它理解为一个专题导航页，帮助你在信息碎片中找到相对完整的脉络，而不是零散地刷到哪条算哪条。</p>
+          </div>
+          <div class="faq-card">
+            <h4><span>Q2</span> 这些爆料内容可靠吗？</h4>
+            <p>页面中的内容主要来自网络公开讨论和网友整理，属于信息聚合性质。建议对具体细节保持审慎，以官方或当事人正式回应为准。我们会在整理时尽量标注来源，但无法保证每一条信息的绝对准确性。</p>
+          </div>
+          <div class="faq-card">
+            <h4><span>Q3</span> 从哪个模块开始看比较合适？</h4>
+            <p>如果你刚接触这个话题，建议先看“最新更新”了解当前进展，再翻阅“热门推荐”中的时间线整理卡片，最后到“深度解析”看整体分析。这样比直接扎进评论区更容易建立完整认知。</p>
+          </div>
+          <div class="faq-card">
+            <h4><span>Q4</span> 为什么有些内容看起来前后矛盾？</h4>
+            <p>这类话题本身信息更新快，不同来源的说法可能存在出入，甚至存在故意放出的烟雾弹。页面会保留不同阶段的讨论，因此出现前后不一致的情况属于正常现象，建议结合时间线自行判断。</p>
+          </div>
+          <div class="faq-card">
+            <h4><span>Q5</span> 适合推荐给朋友一起看吗？</h4>
+            <p>如果你和朋友都关注网络热门话题，这个页面适合分享。不过建议提醒对方保持理性吃瓜，对未经证实的内容不要过度传播，毕竟围观和传谣之间还是有明确界限的。</p>
+          </div>
+          <div class="faq-card">
+            <h4><span>Q6</span> 页面会持续更新吗？</h4>
+            <p>会。黑料大赛相关话题仍在发展，本页面会根据公开信息持续补充热门推荐、最新更新和评论内容。收藏页面后可以定期回来查看，避免错过关键进展。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="section" id="用户评论">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>用户评论 · 瓜友怎么说</h2>
+        </div>
+        <div class="comment-list">
+          <div class="comment-item">
+            <div class="comment-avatar">瓜</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">瓜田里的猹</span><span class="comment-date">11-07</span></div>
+              <p class="comment-text">时间线整理得挺清楚的，之前东看一条西看一条完全串不起来，这下终于搞明白来龙去脉了。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">吃</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">吃瓜不吐皮</span><span class="comment-date">11-07</span></div>
+              <p class="comment-text">聊天记录那个瓜感觉还有后续，截图明显不完整，等一个反转。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">路</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">路人甲围观</span><span class="comment-date">11-06</span></div>
+              <p class="comment-text">说实话有点看累了，每天都有新爆料，真假难辨。页面整理得不错，但内容本身还是让人有点疲惫。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">深</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">深夜刷瓜选手</span><span class="comment-date">11-06</span></div>
+              <p class="comment-text">评委关系图那个整理得挺细的，虽然不知道真假，但看着确实有点东西。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">理</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">理性吃瓜人</span><span class="comment-date">11-06</span></div>
+              <p class="comment-text">建议大家别急着站队，这种比赛类话题经常有反转，让子弹再飞一会儿。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">小</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">小透明一枚</span><span class="comment-date">11-05</span></div>
+              <p class="comment-text">第一次看这种专题页，分类还挺清楚的，比在评论区里翻链接方便多了。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">追</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">追瓜小能手</span><span class="comment-date">11-05</span></div>
+              <p class="comment-text">官方声明写得模棱两可，感觉说了等于没说，希望调查结果能公布得详细一点。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">看</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">看热闹不嫌事大</span><span class="comment-date">11-05</span></div>
+              <p class="comment-text">评论区比正文精彩系列，有些人分析得头头是道，都快赶上侦探了。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">路</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">路过的猫</span><span class="comment-date">11-04</span></div>
+              <p class="comment-text">票数异常那个截图我看了，确实有点离谱，不过也可能是系统显示问题，不好说。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">吃</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">吃瓜群众本群</span><span class="comment-date">11-04</span></div>
+              <p class="comment-text">希望这个页面能一直更新，别像有些专题页更两天就停了。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">冷</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">冷静一下</span><span class="comment-date">11-03</span></div>
+              <p class="comment-text">感觉有些爆料明显是带节奏的，建议编辑筛选的时候多留个心眼。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">新</div>
+            <div class="comment-body">
+              <div class="comment-header"><span class="comment-name">新来的瓜友</span><span class="comment-date">11-03</span></div>
+              <p class="comment-text">请问有没有更早的瓜可以补？想从头开始看，时间线整理那篇帮了大忙。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="section" id="相关资讯">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>相关资讯 · 圈内动态</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-date">2026-11-07</div>
+            <h4>黑料大赛主办方再次回应：将公布评审说明</h4>
+            <p>主办方通过官方渠道表示，针对近期网络讨论较多的问题，正在整理评审过程的详细说明，预计本周内对外公布。</p>
+          </article>
+          <article class="news-card">
+            <div class="news-date">2026-11-06</div>
+            <h4>多位圈内人士发声：呼吁理性看待网络爆料</h4>
+            <p>数位与赛事相关的圈内人士在社交平台发文，呼吁网友理性吃瓜，避免对未证实信息进行二次传播。</p>
+          </article>
+          <article class="news-card">
+            <div class="news-date">2026-11-06</div>
+            <h4>第三方数据平台发布投票异常监测报告</h4>
+            <p>有数据博主对投票环节的曲线进行分析，指出部分时段数据波动异常，建议引入第三方监督机制。</p>
+          </article>
+          <article class="news-card">
+            <div class="news-date">2026-11-05</div>
+            <h4>吃瓜类内容热度持续攀升，专题页成新入口</h4>
+            <p>近期吃瓜类内容的搜索量和讨论度明显上升，类似本页的专题聚合形式正成为不少网友获取信息的首选。</p>
+          </article>
+          <article class="news-card">
+            <div class="news-date">2026-11-04</div>
+            <h4>往届参赛者发声：比赛流程确实存在不透明之处</h4>
+            <p>有往届参赛者在匿名采访中表示，类似比赛在流程透明度上确实有改进空间，但否认存在系统性操作。</p>
+          </article>
+          <article class="news-card">
+            <div class="news-date">2026-11-03</div>
+            <h4>多个品牌方低调处理相关合作内容</h4>
+            <p>部分与参赛选手有过合作的品牌被网友发现调整了宣传物料，不过多数品牌未对此作出公开说明。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>黑料大赛吃瓜网</h3>
+          <p>聚合全网热门吃瓜爆料与黑料大赛动态，提供事件梳理、热门推荐与网友讨论。内容仅供围观参考，请理性吃瓜。</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>快速导航</h4>
+            <a href="/#热门推荐">热门推荐</a>
+            <a href="/#最新更新">最新更新</a>
+            <a href="/#深度解析">深度解析</a>
+            <a href="/#分类入口">分类入口</a>
+          </div>
+          <div class="footer-col">
+            <h4>帮助与互动</h4>
+            <a href="/#FAQ">常见问题</a>
+            <a href="/#用户评论">用户评论</a>
+            <a href="/#相关资讯">相关资讯</a>
+            <a href="/#体验指南">体验指南</a>
+          </div>
+          <div class="footer-col">
+            <h4>友情链接</h4>
+            <a href="/#">吃瓜社区</a>
+            <a href="/#">热门话题榜</a>
+            <a href="/#">爆料合集</a>
+            <a href="/#">专题导航</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 黑料大赛吃瓜网 · 内容仅供围观参考</span>
+        <span>免责声明：本页信息来自网络公开讨论，不代表本站立场</span>
+      </div>
+    </div>
+  </footer>
+</body>
+          </html>
